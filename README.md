@@ -11,6 +11,6 @@ The polygon extraction consists of four components: 1) target-area cropping; 2) 
 4. <b>Color-shift amendment</b>: Detect mismatch between map and legends, and re-color the map with decayed colors from the legends if needed.
 
 ## Environment Setting
-Due to the large amount of polygon features, the script automatically enables multiprocessing; one can turn off the setting by setting split_multiprocessing to False.
+One can set "data_dir" to the path to input maps, and directly execute the script for processing the maps. Due to the large amount of polygon features, the script automatically enables multiprocessing; one can turn off the setting by setting "split_multiprocessing" to False.
 
-The script was run with Amazon AWS instance r6id.24xlarge for the validation.
+The script was run with Amazon AWS instances r6id.8xlarge and r6id.24xlarge for the validation. The corresponding running time performance is provided.
